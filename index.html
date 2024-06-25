@@ -1,0 +1,800 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width">
+<title>Qrec clinical research llp</title>
+	<link rel="canonical" href="https://www.qreccr.com" />
+<link rel="shortcut icon"  type="image/x-icon">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="ui/1.10.3/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/revslider.css" type="text/css" media="screen">
+<link rel="stylesheet" href="https://www.qreccr.com/css/responsive.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/skins/green.css" type="text/css" media="screen"> <!-- Change Skin here -->
+<link rel="stylesheet" href="bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" media="screen">
+<link rel="stylesheet" href="ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+#container1 {
+	width: 100px;
+	height: 400px;
+	position: relative;
+	list-style-type:none;
+	text-align:center;
+}			
+#carousel {
+	position: absolute;
+	top: 00px;
+	/* display: */
+}
+#carousel img {
+	border: 0;
+	margin-bottom:10px;
+	display: inline;
+}
+#ui-carousel-next, #ui-carousel-prev {
+	width: 61px;
+	height: 30px;
+	background: url(images/prev.png) #fff center center no-repeat;
+	top:2px !important;
+	position: absolute;
+	left: 0; top:30px; left:90px;
+	z-index: 100;
+	margin-left: 37px;
+}
+#ui-carousel-next {
+	top: 0;
+	background-image: url(images/next.png);
+	margin-top: 269px;				
+}
+#ui-carousel-prev {
+	bottom: 0;
+}			
+#ui-carousel-next > span, #ui-carousel-prev > span {
+	display: none;
+}
+#fade{
+    display: none;
+    position: fixed;
+    top:-25%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index:1001;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    filter: alpha(opacity=70);
+}
+#light{
+	display: none;
+	position: absolute;
+	top: -25%;
+	left: 50%;
+	width: auto;
+	height: auto;
+	margin-left: -150px;
+	margin-top: -100px;                 
+	padding: 10px;
+	border: 2px solid #FFF;
+	background: #CCC;
+	z-index:1002;
+	overflow:visible;
+}
+</style>
+<style type="text/css">
+	#city{
+		width:230px !important;
+		height:23px !important;
+	}
+</style> 
+<script src="jquery-1.9.1.js"></script>
+<script src="ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript">
+window.document.onkeydown = function (e)
+{
+	if (!e){
+		e = event;
+	}
+	if (e.keyCode == 27){
+		lightbox_close();
+	}
+}
+function lightbox_open(){
+    window.scrollTo(0,0);
+    document.getElementById('light').style.display='block';
+    document.getElementById('fade').style.display='block';  
+}
+function lightbox_close(){
+    document.getElementById('light').style.display='none';
+    document.getElementById('fade').style.display='none';
+}
+function mass(){
+	alert ('hello');
+	}
+</script>
+<!--18-10-2014-->
+<script type="text/javascript" src="rcarousel/jquery.ui.core.js"></script>
+<script type="text/javascript" src="rcarousel/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="rcarousel/jquery.ui.rcarousel.js"></script>
+<script src="bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+jQuery(function($) {
+$("#carousel").rcarousel({
+orientation: "vertical"
+}); 
+$( "#ui-carousel-next" )
+.add( "#ui-carousel-prev" )
+.hover(
+function() {
+$( this );
+},
+function() {
+$( this );
+}
+);					
+});
+</script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/all.js#xfbml=1&appId=1426446284258236";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen"/>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript">
+	$(document).ready(function() {
+		$(".inline").fancybox();
+	});
+</script>
+<body class="wide">
+<!-- Wrap -->
+<div id="wrap">
+<header id="header" class="clearfix">
+<!--     <div style="position:absolute; right:10px; top:5px; " class="social-icons clearfix">
+    	 <a class='inline whtsapps' href="#inline_content" title="Whats App contact: +917597364480" ></a>
+        <a target="_blank" href="#" class="pinterest-iconu"></a>
+        <a target="_blank" href="https://www.facebook.com/pages/QREC-Clinical-Research-ISO-9001-2008-Certified/254767784615408" class="facebook-iconu"></a>
+        <a target="_blank" href="https://twitter.com/QRECCR" class="twitter-iconu"></a>
+    </div>
+    <div style='display:none'>
+			<div id='inline_content' style='padding:10px; background:#ffff;'>
+           <p><strong>QREC is now available on "whats App"</strong></p>
+            <p><strong>Get connected anytime anywhere!!!"</strong></p>
+			<p><strong>Whats App Contact no.</strong></p>
+			<p><strong>+917597364480</strong></p>
+			</div>
+	</div> -->
+    <!-- <div style="text-align:center;" >
+    	<img src="images/Affiliatedtokarnataka.png"/>
+    </div> -->
+    <div style="text-align:center;">
+    <marquee direction="left" height="auto" width="1150px;">
+        <span style=" font-size:15px; color:#000; width:1150px;"></span>
+        <!-- <span style=" font-size:15px; color:#000; width:1150px;">QREC is now collaborated as a learning centre of Texila American University, USA</span> --> 
+        <!-- <span style=" font-size:15px; color:#000; width:1150px; margin:500px;" >GCP-ICH CERTIFICATE  TRAINING</span> -->
+         <!--<span style=" font-size:15px; color:#000;  width:1150px;">&nbsp;&nbsp;QREC is now collaborated as a learning centre of Texila American University</span>-->
+         </marquee>
+         </div>
+<!--     <div class="container " style="background:#15579c; height:30px; color:#FFF; font-size:15PX; text-align:center; padding-top:5PX;">Our Presence: Rajasthan | Maharashtra | Madhya Pradesh | Online / Distance Education
+    </div> -->
+	<div class="container clearfix">
+        <div id="logobar">
+            <a href="index_php.html"><img class="logo1 img-responsive" alt="" src="images/k-kLogo.jpg"></a>
+            <!-- <strong class="tile-text">QREC CLINICAL RESEARCH LLP</strong> -->
+            <strong class="tile-text">QREC<sup>TM</sup> Clinical Research LLP</strong>
+            <a href="#"><img class="logo-right img-responsive" alt="logo-right" src="images/logo_right_new.jpg"></a>
+        </div>
+        <div id="logobar" style="margin-top: -45px;"><strong class="tile-text">India UAE</strong></div>
+        <nav id="nav">
+            <ul id="navlist" class="sf-menu clearfix">
+                <li><a href="index_php.html">Home</a></li>
+                <li><a href="about.html">About Us</a>
+<!--                <ul class="sub-menu">
+                        <li><a href="aq.php">About QREC</a></li>
+                        <li><a href="ab.php">Advisory board</a></li>
+                        <li><a href="mt.php">Management team</a></li>
+                        <li><a href="fac.php">Faculties</a></li>
+                    </ul> -->
+            	</li>
+            	<li><a href="service1.html">Services</a>
+<!--                     <ul class="sub-menu">
+                        <table border="1">
+                            <tr>
+                                <td>
+                                    <li><a href="service.php">Case Report/Record Form (CRF) Design</a></li>
+                                    <li><a href="service.php">ICF, PIS & Patient Diaries Design and Translations</a></li>
+                                    <li><a href="service.php">Study Planning & Feasibility</a></li>
+                                </td>
+                                <td> 
+                                    <li><a href="recs.php">Regulatory and Ethics Committee Submissions</a></li>
+                                    <li><a href="service.php">Patents</a></li>
+                                    <li><a href="pm.php">Project Management</a></li>
+                                    <li><a href="service.php">Statistical Analysis & Report</a></li><br>
+                                </td>
+                                <td>
+                                    <li><a href="service.php">Medical Device Trials</a></li>  
+                                    <li><a href="ssm.php">Site Solutions & Management</a></li>
+                                    <li><a href="service.php">Training and Recruitment</a></li>
+                                    <li><a href="service.php">Clinical Monitoring<br><br></a></li>
+                                </td>
+                            </tr>
+                        </table>   
+                    </ul> -->
+            	</li>
+<!--                 <li><a href="course.php">Courses</a>
+                    <ul class="sub-menu">
+                        <li><a href="regularcources.php">Regular Courses</a></li>
+                        <li><a href="weekendcources.php">Weekend Courses</a></li>
+                        <li><a href="onlinecources.php">Online Courses</a></li>
+                    </ul>
+				</li>
+                <li><a href="event.php?album=Gallary">Events</a></li>
+                <li><a href="">Downloads</a>
+                    <ul class="sub-menu">
+                        <li><a href="download/admission_form_national_student.pdf" target="_blank">Admission Form For National Applicants</a></li>
+                         <li><a href="download/admission_form_international_student.pdf" target="_blank">Admission Form For International Applicants</a></li>
+                        <li><a href="download/Common_brochure.pdf" target="_blank">Brochure</a></li>
+                    </ul>
+                </li> -->
+                <li><a href="certifAndAchi.html" onclick="lightbox_open();">certifications and achievements</a></li>
+                <li><a href="therapeutic.html">therapeutic areas</a></li>
+                <li><a href="WhyQrec.html">Why Qrec</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+	</div>
+</header>
+<!-- Start Header -->
+<section id="slider-home">
+    <div class="container">
+        <div class="fullwidthbanner-container">
+            <div class="fullwidthbanner main_slider">
+                <ul class="no-bullet m0 p0 home_slider">
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="300">
+                        <img alt="Second Banner Image" src="images/bannerNew1.jpg"> 
+                        <div class="tp-caption small sfr" data-x="" data-y="80" data-speed="1000" data-start="1500" data-easing="easeOutBack">
+                            <a href="service1.html" style="text-decoration: none;">
+                                <div style="color:#15579C;" class="typing">
+                                    <ul class="slider_ul">
+                                        <li>Clinical Trials (Phase 3 and 4)</li>
+                                        <li>Real World Evidence Studies</li>
+                                        <li>Observational Studies</li>
+                                        <li>Investigator Initiated Studies</li>
+                                        <li>Registries (National and International) and many more</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div> 
+                </li>
+                <li>
+                    <img alt="First Banner Image" src="images/bannerNew2.jpg">
+                        <div class="tp-caption small sfr" data-x="" data-y="80" data-speed="1000" data-start="1500" data-easing="easeOutBack">
+                            <a href="service1.html" style="text-decoration: none;">
+                                <div style="color:#15579C;" class="typing">
+                                    <ul class="slider_ul">
+                                        <li>Clinical Data Management</li>
+                                        <li>Paper CRF</li>
+                                        <li>Electronic/Remote CRF and many more.</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div> 
+                </li>
+                <li>
+                    <img alt="First Banner Image" src="images/bannerNew3.jpg">
+                        <div class="tp-caption small sfr" data-x="" data-y="80" data-speed="1000" data-start="1500" data-easing="easeOutBack">
+                            <a href="service1.html" style="text-decoration: none;">
+                                <div style="color:#15579C;" class="typing">
+                                    <ul class="slider_ul">
+                                        <li>Statistical Analysis</li>
+                                        <li>R programming, STATA and SAS</li>
+                                        <li>Sample Size Estimation</li>
+                                        <li>Statistical Analysis Report and many more.</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div> 
+                </li>
+                <li>
+                    <img alt="First Banner Image" src="images/bannerNew4.jpg">
+                        <div class="tp-caption small sfr" data-x="" data-y="80" data-speed="1000" data-start="1500" data-easing="easeOutBack">
+                            <a href="service1.html" style="text-decoration: none;">
+                                <div style="color:#15579C;" class="typing">
+                                    <ul class="slider_ul">
+                                        <li>Medico Marketing</li>
+                                        <li>Position and Consensus Statement</li>
+                                        <li>Meta Analysis</li>
+                                        <li>Online Survey</li>
+                                        <li>Market Research Reports and many more.</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>                   
+                </li>
+                <li>
+                    <img alt="First Banner Image" src="images/bannerNew5.png"/> 
+                        <div class="tp-caption small sfr" data-x="" data-y="80" data-speed="1000" data-start="1500" data-easing="easeOutBack">
+                            <a href="service1.html" style="text-decoration: none;">
+                                <div style="color:#15579C;" class="typing">
+                                    <ul class="slider_ul">
+                                        <li>Medical Writing</li>
+                                        <li>Conversion of Thesis into manuscript for publication</li>
+                                        <li>Original Research articles</li>
+                                        <li>Case Report/compendium</li>
+                                        <li>Systematic review</li>
+                                        <li>Literature Mining</li>
+                                        <li>Grant writing</li>
+                                        <li>Pre-submission Peer review</li>
+                                        <li>Investigator Initiated Projects protocol development</li>
+                                        <li>Preparation to Publication and many more.</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>                   
+                </li>
+                <li>
+                    <img alt="First Banner Image" src="images/bannerNew6.png"/> 
+                        <div class="tp-caption small sfr last_slide_last" data-x="" data-y="40" data-speed="1000" data-start="1500" data-easing="easeOutBack" style="background-color:transparent;"> 
+                        <a href="service1.html" style="text-decoration: none;">
+                            <div class="left-side">
+                                <div class="list_title" style=""><span>QRECeLINK</span></div>
+                                <div class="list_banner" style="color:#15579C;">Real time data monitoring</div>
+                                <div class="list_banner" style="color:#15579C;">Data confidentiality, security and validations with world trusted server.</div>
+                                <div class="list_banner" style="color:#15579C;">Dashboard for cumulative View</div>
+                                <div class="list_banner" style="color:#15579C;">User friendly and compatible with Android, Windows and IOS system</div>
+                                <div class="list_banner" style="color:#15579C;">Globally accessible to use.</div>
+                                <div class="list_banner" style="color:#15579C;">Print, cloud save, OTP, Code and email feature for quick confirmation.</div>
+                                <div class="list_banner" style="color:#15579C;">Easy to setup and use with individual Login Id and Password</div>
+                                <div class="list_banner" style="color:#15579C;">Easy tracking of follow up of patients with reminders</div>
+                                <div class="list_banner" style="color:#15579C;">AI integration for smart analysis of past data</div>
+                            </div>
+                            <div class="right-side">
+                                <img src="images/slide-img.png">
+                            </div>
+                        </a>
+                        </div>                   
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Header --> 
+<!-- Start Content -->
+<section id="content">
+    <div class="container clearfix">
+        <div class="row">
+            <div id="main" class="nine column container_full_width">
+            <!-- <div id="main"> -->
+            	<div class="seperator mb25"></div>
+                <div>
+    <!-- <a href="#" onClick="lightbox_open();"><img alt="Certificate" src="certificate.png" ></a> -->
+                    <div id="light"><img alt="QRECertificate" src="QRECertificate.jpg"></div>
+                    <div id="fade" onclick="lightbox_close();"></div> 
+                    <div style=""></div>
+                    <!-- <blockquote class="speech-bubble">
+                        <div class="quote-content">
+                            <h4 style="text-align:center;">Welcome Letter</h4>
+                            <h4>Dear Visitor,</h4>
+                            <h4>QREC team cordially welcome you to QREC Clinical Research!</h4>
+                            <p>QREC CR is a company, seeded with the vision to see Quality, Regulatory, Ethics and Confidentiality reflecting in clinical research at all levels. We at QREC CR are here to provide you solutions which help you conduct the clinical research in the right way with highest quality standards. As you navigate through the website and review our services, it is our hope that you will not only find it helpful but also begin to feel as though you know us and our style. I can say without hesitation that the spirit of QREC has a foundation in friendship, support and respect. The excitement shown from our longtime friends and partners, coupled with the vision we have had for many years has supported our achievements and made us what we are today. We are committed to excellence and delivering the best possible solutions for your needs. Thus,  we are proud to offer you our unique blend of knowledge and local expertise. As we continue to grow and seek out new opportunities, it wilLbe my personal mission to ensure we bring the QREC spirit to you.</p>
+                            <h4>With sincerest regards and thanks for your visit.</h4>
+                            <h4><a href="../Brochur/QREC_brochure.pdf" target="_blanck">Download Brochure</a></h4>
+                            <span class="quote-arrow"></span>
+                         </div>
+                         <div class="quote-meta"><strong>QREC TEAM</strong><br>
+                        </div>
+                    </blockquote> -->
+                </div>
+               <!--  <div class="twelve column"> 
+                    <div id="content">
+                    	<div class="title-1 m0 mb15" style="">MEMBERSHIPS and Accreditation</div>
+                        <div class="twelve column">
+                            <ul class="bxslider portfolio-items clearfix">
+                                <li>
+                                    <div class="portfolio-item">
+                                    	<img src="images/membership/Clinical-Research-Association-of-Turkey_scroller_thumb.gif">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="portfolio-item">
+                                    	<img src="images/membership/ISO-Certified-Co-Logo-Blue_scroller_thumb.jpg">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="portfolio-item">
+                                    	<img src="images/membership/QREC CLINICAL RESEARCH INSTITUTE-1_scroller_thumb.jpg">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="portfolio-item">
+                                    	<img src="images/membership/QREC CLINICAL RESEARCH INSTITUTE-3_scroller_thumb.jpg">
+                                    </div>
+                                </li>
+                                <li>	
+                                    <div class="portfolio-item">
+                                    	<img src="images/membership/QREC CLINICAL RESEARCH INSTITUTE-2_scroller_thumb.jpg">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="fragment-3">
+                    <script>
+                    $( "#tabs" ).tabs();
+                    </script>
+                    </div>
+                </div> -->
+            </div>
+        <!-- End Main -->
+<!--             <aside id="sidebar" style="margin-top: 20px;">
+                <div class="three column"> 
+                    <div class="title-1 m0 mb15">
+                    	<a href="applyonline.php">Apply Online</a>
+                    </div>
+                    <div class="title-1 m0 mb15">Submit Query</div>
+					                    <div style="clear:both"></div>
+                    <div style="clear:both"></div>
+                	<div class="title-1 m0 mb15">Student  Testimonials</div>
+            <ul class="bxslider fade p0 m0" data-autoslide="1" data-autoslide_on="1">
+              <li>
+                <blockquote class="speech-bubble">
+                  <div class="quote-content" style="width:auto;">
+                    <p class="m0">I Komal Gola like to thank the whole QREC CRI team for such a good, faithful and enlightening experience throughout the segment.</p>
+                    <span class="quote-arrow"></span> </div>
+                  <div class="quote-meta"><strong>Komal Gola</strong> </div>
+                </blockquote>
+              </li>
+               <li>
+                <blockquote class="speech-bubble">
+                  <div class="quote-content">
+                    <p class="m0">I Vidushi Bazaz enrolled for CACCCR in which I received the study material online as well as hard copy through courier.
+                      Classes are also carried out before each assessment through Skype.
+                      I am satisfied with the way they guide students through online classes.
+                      The faculty members seem to be very competent as their interaction with me is highly professional. -->
+      <!--                
+                      QREC is also very helpful in securing me internship with a reputed hospital for which I am very grateful to them.</p>
+                    <span class="quote-arrow"></span> </div>
+                  <div class="quote-meta"><strong>Vidushi Bazaz</strong></div>
+                </blockquote>
+              </li>
+              <li>
+                <blockquote class="speech-bubble">
+                  <div class="quote-content">
+                    <p class="m0">Study material and services provided by you are very efficient and reliable. Assessments are helpful to judge ourselves. Experts are well qualified. Study material delivery is prompt and without delay. Certificate is good and well made.</p>
+                    <span class="quote-arrow"></span> </div>
+                  <div class="quote-meta"><strong>Dr.Vidya's</strong></div>
+                </blockquote>
+              </li>
+               <li>
+                <blockquote class="speech-bubble">
+                  <div class="quote-content">
+                    <p class="m0">I am very thank full to the whole team of QREC. It was a wonderful journey. Starting from regular Certificate course to PG Diploma all the teachers are very helpful played a vital role to understand the concept and basic. This institute provided useful references which helps me a lot to increase my technical level which would also help in to crack me the interview. Ihave joined in Novartis in Drug Safety & Epidemiology  team.  Working in PV team I am heartily satisfied with this organisation.</p>
+                    <span class="quote-arrow"></span> </div>
+                  <div class="quote-meta"><strong>Ditipriya Mitra</strong></div>
+                </blockquote>
+              </li>
+            </ul> -->
+<!--             <div class="title-1 m0 mb15">International  Student  Testimonials</div>
+            <ul class="bxslider fade p0 m0" data-autoslide="1" data-autoslide_on="1">
+              <li>
+                <blockquote class="speech-bubble">
+                  <div class="quote-content" style="width:auto;">
+                    <p class="m0">I am writing to you today to express my sincere thanks and appreciation for the help and service I received from the instructors of QREC clinical research institute. The Institute helped me build my confidence. I had a good time, gained a new experience; I learned to be more creative, in my thoughts of clinical research.  I felt the cooperation among the student and instructor was amazing, they helped me  in strenuous times in attending my classes. I appreciate as the instructors were allowed to contact at any time regarding difficulties that I come across in my course. Once again thanks to QREC, and I am happy for continuing for my further courses in QREC. </p>
+                    <span class="quote-arrow"></span> </div>
+                  <div class="quote-meta"><strong>Pretty Mary Mathews</strong> </div>
+                </blockquote>
+              </li>
+            </ul> -->
+          </div>
+            </aside>
+        </div>
+    </div>
+</section>
+</div>
+<!-- End Content --> 
+<!-- End Footer -->
+	<style>
+		h2{
+  text-align:center;
+  padding: 20px;
+}
+/* Slider */
+.slick-slide img {max-height: 60px; object-fit: contain; margin-bottom: 20px;}
+.slick-initialized .slick-slide {height: 100%;}
+.slick-slide {
+    margin: 0px 20px;
+}
+.slick-slide img {
+    width: 100%;
+}
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+	</style>
+</div>
+		<!-- Footer -->
+	<div class="footer_section">
+		<section class="footer_logo_slider container">
+		    <div class="rt-container">
+		          <div class="col-rt-12">
+		              <h4 style="text-align: center;">We are registered vendors for Domestic and Emerging Markets of :</h4>
+		               <section class="customer-logos slider">
+		                  <div class="slide"><img src="images/Lupin-Pharma.png"></div>
+		                  <div class="slide"><img src="images/reddys.png"></div>
+		                  <div class="slide"><img src="images/mankind.png"></div>
+		                  <div class="slide"><img src="images/torrent.png"></div>
+		                  <div class="slide"><img src="images/Glenmark.png"></div>
+		                  <div class="slide"><img src="images/serdia.png"></div>
+		                  <div class="slide"><img src="images/Terumo.png"></div>
+		               </section>
+				</div>
+		    </div>
+		</section>
+		<footer id="footer">
+			<div class="container clearfix">
+				<div class="row">
+					<!-- <div class="col-md-4">
+						<h4>QREC CLINICAL RESEARCH LLP</h4>
+						<img class="logo_footer" alt="logo-footer" src="images/logo-right.png">
+						<p>113, ARG North Avenue, Silar Road, VKI 9A,<br> Jaipur, Rajasthan 302013</p>
+						<ul>
+							<li><a href="mail:bd@qreccr.com">bd@qreccr.com</a></li>
+							<li><a href="tel:+91 7597364480">+91 7597364480</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h4>Quick Links</h4>
+						<ul>
+							<li><a href="index_php.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="service1.html">Services</a></li>
+							<li><a href="certifAndAchi.html">Certifications and Achievements</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h4>Quick Links</h4>
+						<ul>
+							<li><a href="therapeutic.html">Therapeutic Areas</a></li>
+							<li><a href="WhyQrec.html">Why Qrec</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</div> -->
+				<div id="back-to-top">
+					<a href="#top">Top</a>
+				</div>
+				<div class="copyright">
+					<p>
+						Designed by <a href="http://www.marketingmindz.com/" target="_blank" style="color:#ffffff !important; text-decoration:none;">Marketing Mindz</a>
+					</p>
+					<div class="social-icons"><span>Connect with us:</span>
+					<a target="_blank" href="https://api.whatsapp.com/send?phone=+917597364480" title="Whats App contact: +917597364480"> <i class="fa fa-whatsapp" aria-hidden="true"></i> </a>
+					<a target="_blank" href="https://www.linkedin.com/company/qrec-clinicalresearchllp/mycompany/?viewAsMember=true" target="_blank"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+					<!-- <a class='inline whtsapp' href="#inline_content" title="Whats App contact: +917597364480" ></a>
+					<a target="_blank" href="#" class="pinterest-icon"></a>
+					<a target="_blank" href="https://www.facebook.com/pages/QREC-Clinical-Research-ISO-9001-2008-Certified/254767784615408" class="facebook-icon"></a>
+					<a target="_blank" href="https://twitter.com/QRECCR" class="twitter-icon"></a> -->
+				</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- End Wrap -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.themepunch_plugins.min.js"></script> <!-- swipe gestures -->
+	<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript">
+		var tpj=jQuery;
+		tpj.noConflict();
+		tpj(document).ready(function() {
+			if (tpj.fn.cssOriginal!=undefined)
+			tpj.fn.css = tpj.fn.cssOriginal;
+			tpj('.fullwidthbanner').revolution({
+				delay:6000,
+				startwidth:1170,
+				startheight:680,
+				onHoverStop: "on",
+                thumbWidth: 100,
+                thumbHeight: 50,
+                thumbAmount: 3,
+                hideThumbs: 200,
+                navigationType: "bullet",
+                navigationArrows: "verticalcentered",
+                navigationStyle: "round",
+                touchenabled: "on",
+                navOffsetHorizontal: 0,
+                navOffsetVertical: 20,
+                stopAtSlide: -1,
+                stopAfterLoops: -1,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                hideSliderAtLimit: 0,
+                fullWidth: "on",
+                shadow: 0
+			});
+		});
+	</script>
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
+	<script src="ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+			$('.customer-logos').slick({
+				slidesToShow: 5,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1500,
+				arrows: false,
+				dots: false,
+				pauseOnHover: false,
+				responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 3
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 2
+					}
+				}]
+			});
+		});
+    </script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.superfish.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!-- <div   class="freechat-671fc86500ae5dd534f859e4483354fe   {{   subscriber_id   }}"></div>
+<script>
+	window.jQuery || document.write("<script  src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>\x3C/script>")
+</script>
+	<script id="s1" src="{{    siteUrl    }}visitors-ajax.js"></script>
+	<script type="text/javascript">
+	function runFreechatScript(){ jQuery('.freechat-671fc86500ae5dd534f859e4483354fe').lc(); }
+	 if (window.addEventListener) window.addEventListener('load', runFreechatScript, false); 
+	 else if (window.attachEvent) window.attachEvent('onload', runFreechatScript); 
+	 else window.onload = runFreechatScript;
+</script> -->
+<!--Start Button Code-->
+<div class="freechat-671fc86500ae5dd534f859e4483354fe YA1452830"></div>
+<script>window.jQuery ? (window.$ != undefined ? '': $ = window.jQuery ):document.write('<script src="ajax/libs/jquery/3.2.1/jquery.min.js">\x3C/script>')</script>
+<script id="s1" src="visitors-ajax.js"></script>
+<script type="text/javascript">
+    function runFreechatScript() {
+        jQuery('.freechat-671fc86500ae5dd534f859e4483354fe').lc();
+    }
+    if (window.addEventListener)
+        window.addEventListener("load", runFreechatScript, false);
+    else
+    if (window.attachEvent)
+        window.attachEvent("onload", runFreechatScript);
+    else
+        window.onload = runFreechatScript;
+        ////for custom field 
+     function customfield(){
+         var customfieldData = { 
+             'type':'customfield',
+             'data':{
+                /*"name":"username",*/  /*add fields like this*/
+             }
+              };
+            if (typeof send_data_to_server !== 'undefined') {
+                send_data_to_server(customfieldData);
+            }
+        }
+</script>
+<!--End Code-->
+</body>
+</html><!-- End Footer -->
